@@ -45,4 +45,13 @@ int t19(void) {
   }else{
       printf("Largest is %d \n",c);
   }
+<<<<<<< Updated upstream
+=======
+}*/
+ int t20(void) {
+      const float pi = 3.14159;
+      int radix,rad,s,p;
+      scanf("%f",&rad );
+      printf("Диаметр окружности = %f \nПериметр окружности = %f \nПлощадь окружности = %f", radix = );
+>>>>>>> Stashed changes
 }

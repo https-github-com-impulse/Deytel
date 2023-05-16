@@ -3,7 +3,7 @@
     /* code
     printf("%d\n",getOper() );
     printf("%d",t18() );*/
-    printf("%d",t19() );
+    printf("%d",t20() );
     return 0;
   }
 
@@ -26,7 +26,7 @@
     }
 }*/
 
-int t19(void) {
+/*int t19(void) {
   int a,b,c,sum,mult,larger,smallest;
   printf("%d Input three different integers: ");
   scanf("%d %d %d",&a,&b,&c);

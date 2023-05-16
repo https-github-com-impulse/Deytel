@@ -50,8 +50,7 @@ int t19(void) {
 }*/
  int t20(void) {
       const float pi = 3.14159;
-      int radix,rad,s,p;
+      float radix,rad,s,p;
       scanf("%f",&rad );
-      printf("Диаметр окружности = %f \nПериметр окружности = %f \nПлощадь окружности = %f", radix = );
->>>>>>> Stashed changes
+      printf("Диаметр окружности = %f \nПериметр окружности = %f \nПлощадь окружности = %f", radix =2*rad,2*rad*pi,(rad*rad)*pi);
 }

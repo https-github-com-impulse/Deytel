@@ -54,6 +54,7 @@
       printf("Диаметр окружности = %f \nПериметр окружности = %f \nПлощадь окружности = %f", radix =2*rad,2*rad*pi,(rad*rad)*pi);
 }*/
 
+<<<<<<< HEAD
   int coordinates(void){
     int a,b,c,d,e;
     scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
@@ -61,4 +62,10 @@
     if (a>b && a>c && a>d && a>e) {
       printf("%d наибольшее \n", );
     }!
+=======
+  int figures(void){
+    printf("*\n******\n");
+    //printf("*\n*\n*\n*\n*\n*\n");
+    printf("*********\n*\n*\n*\n*\n*\n*\n");
+>>>>>>> 6f8366a97c21f100002058d89dcbe342750a0262
   }

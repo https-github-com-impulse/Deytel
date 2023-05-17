@@ -2,8 +2,8 @@
   int  main() {
     /* code
     printf("%d\n",getOper() );
-    printf("%d",t18() );*/
-    printf("%d",t30() );
+    printf("%d",t18() );
+    printf("%d",t31() );*/
     return 0;
   }
 
@@ -78,7 +78,7 @@
   /*int t29(void){
       printf("%d %d %d %d %d %d %d %d %d %d %d %d %d",'A','B','C','a','b','c','0','1','2','$','*','+'," ");
 }*/
-  int t30(void){
+  /*int t30(void){
       int number,digit;
       printf("Введите число: ");
       scanf("%d",&number);
@@ -87,4 +87,13 @@
         number /= 10;  // удаляем последнюю цифру числа
         printf("%d ", digit);  // выводим цифру через пробел
   }
-}
+}*/
+  /*int t31(void) {
+      int num,qube,square;
+      printf("Введите граничное число: ");
+      scanf("%d",&num);
+      printf("Number\tsquare\tcube\n");
+      for(int i = 0; i<=num;i++){
+        printf("%d\t%d\t%d\n",i,i*i,i*i*i);
+      }
+}*/

@@ -3,7 +3,7 @@
     /* code
     printf("%d\n",getOper() );
     printf("%d",t18() );*/
-    printf("%d",t29() );
+    printf("%d",t30() );
     return 0;
   }
 
@@ -75,6 +75,16 @@
       printf("its no digits \n");
     }
 }*/
-  int t29(void){
+  /*int t29(void){
       printf("%d %d %d %d %d %d %d %d %d %d %d %d %d",'A','B','C','a','b','c','0','1','2','$','*','+'," ");
+}*/
+  int t30(void){
+      int number,digit;
+      printf("Введите число: ");
+      scanf("%d",&number);
+      while (number > 0) {
+        digit = number % 10;  // получаем последнюю цифру числа
+        number /= 10;  // удаляем последнюю цифру числа
+        printf("%d ", digit);  // выводим цифру через пробел
   }
+}

@@ -3,7 +3,7 @@
     /* code
     printf("%d\n",getOper() );
     printf("%d",t18() );*/
-    printf("%d",figures() );
+    printf("%d",t24() );
     return 0;
   }
 
@@ -54,18 +54,28 @@
       printf("Диаметр окружности = %f \nПериметр окружности = %f \nПлощадь окружности = %f", radix =2*rad,2*rad*pi,(rad*rad)*pi);
 }*/
 
-<<<<<<< HEAD
-  int coordinates(void){
+
+  /*int coordinates(void){
     int a,b,c,d,e;
     scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
     printf("Мы имеем 5 чисел, нужно найти наименьшее и наибольшее  из %d %d %d %d %d \n",a,b,c,d,e );
     if (a>b && a>c && a>d && a>e) {
       printf("%d наибольшее \n", );
-    }!
-=======
-  int figures(void){
+}*/
+
+/*  int figures(void){
     printf("*\n******\n");
     //printf("*\n*\n*\n*\n*\n*\n");
     printf("*********\n*\n*\n*\n*\n*\n*\n");
 >>>>>>> 6f8366a97c21f100002058d89dcbe342750a0262
-  }
+}*/
+
+int t24(void){
+    int num;
+    scanf("%d",&num );
+    if(num%2==0){
+        printf("its gigits! \n");
+    }else{
+      printf("its no digits \n");
+    }
+}

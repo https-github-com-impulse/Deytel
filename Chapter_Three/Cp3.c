@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",calculusBenz());
+  printf("%d",creditCard());
   return 0;
 }
   /*int loop(void){
@@ -27,8 +27,7 @@ int main(){
   }
   printf("%s %d","NeedCodeExit : ",sum );
 }*/
-
-  int calculusBenz(void){
+  /*int calculusBenz(void){//доделать
     float s,v,consumption,result,fullresult;
     int count=0;
     while (consumption!=-1) {
@@ -48,5 +47,39 @@ int main(){
     }
       fullresult = result/count;
       printf("Среднее число миль/галлон = %.2f",fullresult);
-  }
-//607/65.81
+}*/
+
+    int creditCard(void){
+        int numberCard;
+        float balanceBegin,fullSummConsumption,fullSummCredit;
+        float newBalance,sizeOfCredit;
+        //printf("Введите номер счета (-1 если ввод закончен) : ");
+        //scanf("%d",&numberCard);
+        while (numberCard!=-1) {
+          printf("Введите номер счета (-1 если ввод закончен) : ");
+          scanf("%d",&numberCard);
+            if(numberCard == -1){
+              break;
+            }else{
+              printf("Введите начальный баланс : ");
+              scanf("%f",&balanceBegin);
+              printf("Введите общую сумму расходов : " );
+              scanf("%f",&fullSummConsumption);
+              printf("Введите общую сумму кредита:" );
+              scanf("%f",&fullSummCredit );
+              printf("Введите предельный размер кредита : " );
+              scanf("%f",&sizeOfCredit);
+              newBalance = balanceBegin+fullSummConsumption-fullSummCredit;
+              printf("%s\n","==================================" );
+              printf("Счет %d\nПредельный размер кредита %.2f\nБаланс %.2f\n",numberCard,sizeOfCredit,newBalance);
+            }
+
+            if(newBalance>sizeOfCredit){
+              printf("Предельный размер кредита превышен \n");
+              continue;
+            }else{
+              printf("Покупайте далее\n");
+              continue;
+            }
+        }
+    }

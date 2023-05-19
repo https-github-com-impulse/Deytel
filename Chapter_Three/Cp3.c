@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",cycle());
+  printf("%d",findLargest());
   return 0;
 }
   /*int loop(void){
@@ -127,8 +127,22 @@ int main(){
       }
     }
 }*/
-    int cycle (void){
+  /*int cycle (void){
       for(int i = 1;i<=10;i++){
         printf("%d\t",i);
       }
-    }
+    }*/
+  //алгоритм нахождения максимума из двух чисел с потока ввода.(кривой)
+  /*int findLargest(void){
+      int counter = 0;
+       int number,maximum;
+      while(counter<=10){
+        counter++;
+        scanf("%d",&maximum);
+        scanf("%d",&number);
+        if(number>maximum){
+          maximum = number;
+          printf("%d is maximum ",maximum);
+        }
+      }
+}*/

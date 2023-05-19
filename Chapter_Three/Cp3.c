@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",chemicalCompany());
+  printf("%d",bank());
   return 0;
 }
   /*int loop(void){
@@ -82,8 +82,7 @@ int main(){
             }
         }
 }*/
-
-  int chemicalCompany(void){
+  /*int chemicalCompany(void){
       float sumSalary,result,promRes;
       while(sumSalary!=-1){
           printf("%s\n","Введите сумму продаж в долларах (-1 если ввод закончен): " );
@@ -91,4 +90,22 @@ int main(){
           promRes = (200+((9*sumSalary)/100));
           printf(" Зарплата : %.2f \n",promRes);
       }
-  }
+}*/
+
+    int bank(void){
+      float principal,interest,days,rate;
+      while(principal!=-1){
+        printf("%s\n","Введите основную сумму ссуды (-1 если ввод закончен)");
+          scanf("%f",&principal);
+        if(principal==-1){
+          break;
+        }else{
+          printf("%s","Введите процентную ставку : ");
+          scanf("%f",&rate);
+          printf("%s","Введите срок ссуды в днях : " );
+          scanf("%f",&days);
+          interest = principal*rate*(days/365);
+          printf("Выплаты по простым процентам составляют %.2f \n",interest);
+        }
+      }
+    }

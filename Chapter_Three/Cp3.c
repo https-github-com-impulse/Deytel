@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",salary());
+  printf("%d",cycle());
   return 0;
 }
   /*int loop(void){
@@ -127,3 +127,8 @@ int main(){
       }
     }
 }*/
+    int cycle (void){
+      for(int i = 1;i<=10;i++){
+        printf("%d\t",i);
+      }
+    }

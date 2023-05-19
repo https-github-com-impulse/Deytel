@@ -91,8 +91,7 @@ int main(){
           printf(" Зарплата : %.2f \n",promRes);
       }
 }*/
-
-    int bank(void){
+  /*int bank(void){
       float principal,interest,days,rate;
       while(principal!=-1){
         printf("%s\n","Введите основную сумму ссуды (-1 если ввод закончен)");
@@ -108,4 +107,4 @@ int main(){
           printf("Выплаты по простым процентам составляют %.2f \n",interest);
         }
       }
-    }
+}*/

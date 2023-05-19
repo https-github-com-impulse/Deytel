@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",creditCard());
+  printf("%d",chemicalCompany());
   return 0;
 }
   /*int loop(void){
@@ -48,8 +48,7 @@ int main(){
       fullresult = result/count;
       printf("Среднее число миль/галлон = %.2f",fullresult);
 }*/
-
-    int creditCard(void){
+  /*int creditCard(void){
         int numberCard;
         float balanceBegin,fullSummConsumption,fullSummCredit;
         float newBalance,sizeOfCredit;
@@ -82,4 +81,14 @@ int main(){
               continue;
             }
         }
-    }
+}*/
+
+  int chemicalCompany(void){
+      float sumSalary,result,promRes;
+      while(sumSalary!=-1){
+          printf("%s\n","Введите сумму продаж в долларах (-1 если ввод закончен): " );
+          scanf("%f", &sumSalary);
+          promRes = (200+((9*sumSalary)/100));
+          printf(" Зарплата : %.2f \n",promRes);
+      }
+  }

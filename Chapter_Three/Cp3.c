@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",tablePow());
+  printf("%d",refactoring());
   return 0;
 }
   /*int loop(void){
@@ -146,8 +146,7 @@ int main(){
         }
       }
 }*/
-
-    int tablePow(void){
+  /*int tablePow(void){
       int n,tens,hundreds,thousands;
       int i = 1;
       printf("N\t10*N\t100*N\t1000*N\n\n");
@@ -155,4 +154,31 @@ int main(){
         printf("%d\t%d\t%d\t%d\n",i,10*i,100*i,1000*i);
         i++;
       }
-    }
+}*/
+  /*int refactoring(void){
+        unsigned int passes = 0;
+        unsigned int fails = 0;
+        unsigned int student = 1;
+        int result;
+        do {
+            printf("%s","Enter  result (1==pass/2==fail): ");
+            scanf("%d",&result );
+            if(result!=1 || result!=2){
+              scanf("%d",&result);
+            }else{
+              if (result==1) {
+                passes++;
+              }else{
+                fails++;
+              }
+              student++;
+            }
+        } while(student<=10 && result==1||result==2);
+
+            printf("Passed %d\n",passes);
+            printf("Failures %d\n",fails);
+              if (passes>8) {
+              printf("%s\n","Premium teacher" );
+              }
+          return 0;
+    }*/ //доделать

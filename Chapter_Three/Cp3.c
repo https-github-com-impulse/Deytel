@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",bank());
+  printf("%d",salary());
   return 0;
 }
   /*int loop(void){
@@ -107,4 +107,23 @@ int main(){
           printf("Выплаты по простым процентам составляют %.2f \n",interest);
         }
       }
+}*/
+  /*int salary(void){
+    float hours,tarif,ppl_salary;
+    while (hours!=-1) {
+      printf("%s","Введите # отработанных часов : " );
+      scanf("%f",&hours);
+      if(hours==-1){
+        break;
+      }else{
+        printf("%s","Введите часовой тариф работника :" );
+        scanf("%f",&tarif);
+        if(hours>40){
+          ppl_salary = hours *tarif *1,5;
+        }else{
+          ppl_salary = hours *tarif;
+        }
+        printf("Зарплата составляет : %.2f\n",ppl_salary );
+      }
+    }
 }*/

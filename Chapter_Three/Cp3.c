@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",cycle2());
+  printf("%d",quadroPrint());
   return 0;
 }
   /*int loop(void){
@@ -182,8 +182,7 @@ int main(){
               }
           return 0;
     }*/ //доделать
-
-    int cycle2(void){
+  /*int cycle2(void){
       int a;
       printf("%s","A\tA+2\tA+4\tA+6\n\n");
       for(int i = 3;i<=15;i+=3){
@@ -191,4 +190,19 @@ int main(){
           printf("%d\t%d\t%d\t%d\n",i,i+2,i+4,i+6 );
 
       }
-    }
+    }*/
+  /*int quadroPrint(void){
+        int s ;
+        printf("%s\n","Введите сторону квадрата: ");
+        scanf("%d",&s);
+        int i = 0;
+        while (i<s) {
+          int j=0;
+          while (j<s) {
+            printf("*");
+            j++;
+          }
+          printf("\n");
+          i++;
+        }
+}*/

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",quadroPrint());
+  printf("%d",whileSpeedTest());
   return 0;
 }
   /*int loop(void){
@@ -206,3 +206,14 @@ int main(){
           i++;
         }
 }*/
+
+    int whileSpeedTest(void) {
+      int i = 1;
+      while(i<3000000){
+        if(i==1000000){
+          printf("%s","IS A MILLION!" );
+        }
+        i++;
+        printf("%d\n",i);
+      }
+    }

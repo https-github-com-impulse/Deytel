@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",chessPool());
+  printf("%d",infinityCycle());
   return 0;
 }
   /*int loop(void){
@@ -242,3 +242,12 @@ int main(){
       }
     }
 }*/ //complete
+    int infinityCycle(void){
+      int i = 0;
+        while(1){
+          if(i%2==0){
+              printf("%d ",i);
+          }
+          i++;
+        }
+    }

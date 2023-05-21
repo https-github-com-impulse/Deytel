@@ -267,7 +267,7 @@ int main(){
         }else{
           printf("%s\n", "Its no triangle :()" );
         }
-    }*/// needRefactoring!
+}*/// needRefactoring!
   /*int quadroTriangle(void){
       float a,b,c;
       printf("%s\n","Введите 3 стороны треугольника: " );
@@ -277,4 +277,7 @@ int main(){
       }else{
           printf("%s\n", "Увы и ах");
       }
-    }*/
+}*/
+  //сделать задачу 3.46!!!!!! шифровка
+
+  

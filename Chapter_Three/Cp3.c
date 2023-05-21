@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",starline());
+  printf("%d",chessPool());
   return 0;
 }
   /*int loop(void){
@@ -216,16 +216,29 @@ int main(){
         printf("%d\n",i);
       }
 }*/
-
   /*int starline(void){
-      int count = 1;
-       int counter =1;
+      int counterStars = 0;
+       int count =1;
+       int check=0;
         while(count<=100){
           printf("%s\n","*");
           count++;
-          while (count%2==10) {
-            printf("\n");
-            counter++;
+          while(counterStars<=100){
+              check++;
+              if(count%2==0) {
+                printf("\n");
+              }
           }
         }
 }*/ //доделать
+  /*int chessPool(void){
+      for(int i = 1;i<=8;i++){
+        printf("\n");
+          if(i%2==0){
+            printf(" ");
+          }
+        for(int i =1; i<=8;i++){
+          printf("* ");
+      }
+    }
+}*/ //complete

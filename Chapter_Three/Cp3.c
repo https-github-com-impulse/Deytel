@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",radiusCircle());
+  printf("%d",triangle());
   return 0;
 }
   /*int loop(void){
@@ -258,3 +258,13 @@ int main(){
       scanf("%f",&r);
       printf("Диаметр круга = %.2f,\nПериметр круга = %.2f,\nПлощадь круга = %.2f\n",2*r,2*pi*r,pi*(r*r));
 }*/
+    int triangle(void){
+        float a,b,c;
+        printf("%s\n","Введите 3 стороны треугольника: " );
+        scanf("%f %f %f", &a, &b, &c );
+        if(a+b<c || a+c<b || b+c<a){
+          printf("%s\n","It's triangle!" );
+        }else{
+          printf("%s\n", "Its no triangle :()" );
+        }
+    }

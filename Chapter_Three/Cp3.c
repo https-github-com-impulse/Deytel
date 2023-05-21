@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",infinityCycle());
+  printf("%d",radiusCircle());
   return 0;
 }
   /*int loop(void){
@@ -131,7 +131,7 @@ int main(){
       for(int i = 1;i<=10;i++){
         printf("%d\t",i);
       }
-    }*/
+}*/
   //алгоритм нахождения максимума из двух чисел с потока ввода.(кривой)
   /*int findLargest(void){
       int counter = 0;
@@ -181,7 +181,7 @@ int main(){
               printf("%s\n","Premium teacher" );
               }
           return 0;
-    }*/ //доделать
+}*/ //доделать
   /*int cycle2(void){
       int a;
       printf("%s","A\tA+2\tA+4\tA+6\n\n");
@@ -190,7 +190,7 @@ int main(){
           printf("%d\t%d\t%d\t%d\n",i,i+2,i+4,i+6 );
 
       }
-    }*/
+}*/
   /*int quadroPrint(void){
         int s ;
         printf("%s\n","Введите сторону квадрата: ");
@@ -206,7 +206,7 @@ int main(){
           i++;
         }
 }*/
-  /*int whileSpeedTest(void) {
+  /*int whileSpeedTest(void){
       int i = 1;
       while(i<3000000){
         if(i==1000000){
@@ -242,7 +242,7 @@ int main(){
       }
     }
 }*/ //complete
-    int infinityCycle(void){
+  /*int infinityCycle(void){
       int i = 0;
         while(1){
           if(i%2==0){
@@ -250,4 +250,11 @@ int main(){
           }
           i++;
         }
-    }
+}*/
+  /*int radiusCircle(void){
+      float r,p,d;
+      const float pi = 3.14158;
+      printf("%s","Введите радиус: ");
+      scanf("%f",&r);
+      printf("Диаметр круга = %.2f,\nПериметр круга = %.2f,\nПлощадь круга = %.2f\n",2*r,2*pi*r,pi*(r*r));
+}*/

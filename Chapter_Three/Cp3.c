@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",triangle());
+  printf("%d",quadroTriangle());
   return 0;
 }
   /*int loop(void){
@@ -258,7 +258,7 @@ int main(){
       scanf("%f",&r);
       printf("Диаметр круга = %.2f,\nПериметр круга = %.2f,\nПлощадь круга = %.2f\n",2*r,2*pi*r,pi*(r*r));
 }*/
-    int triangle(void){
+  /*int triangle(void){
         float a,b,c;
         printf("%s\n","Введите 3 стороны треугольника: " );
         scanf("%f %f %f", &a, &b, &c );
@@ -267,4 +267,14 @@ int main(){
         }else{
           printf("%s\n", "Its no triangle :()" );
         }
-    }
+    }*/// needRefactoring!
+  /*int quadroTriangle(void){
+      float a,b,c;
+      printf("%s\n","Введите 3 стороны треугольника: " );
+      scanf("%f %f %f", &a, &b, &c );
+      if(((a*a)+(b*b))==(c*c)){
+          printf("%s\n","Это прямоугольный треугольник");
+      }else{
+          printf("%s\n", "Увы и ах");
+      }
+    }*/

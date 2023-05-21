@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d",whileSpeedTest());
+  printf("%d",starline());
   return 0;
 }
   /*int loop(void){
@@ -206,8 +206,7 @@ int main(){
           i++;
         }
 }*/
-
-    int whileSpeedTest(void) {
+  /*int whileSpeedTest(void) {
       int i = 1;
       while(i<3000000){
         if(i==1000000){
@@ -216,4 +215,17 @@ int main(){
         i++;
         printf("%d\n",i);
       }
-    }
+}*/
+
+  /*int starline(void){
+      int count = 1;
+       int counter =1;
+        while(count<=100){
+          printf("%s\n","*");
+          count++;
+          while (count%2==10) {
+            printf("\n");
+            counter++;
+          }
+        }
+}*/ //доделать

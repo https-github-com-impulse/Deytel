@@ -57,28 +57,32 @@
             float lastMonthElectroRate,lastMonthGasRate,
             lastMonthWatherRate,currentElectroRate,currentGasRate,currentWatherRate,promResElectro,promResGas,promResWather;
 
-                printf("%s","Введите текущие показания счетчиков учета:\nЭлектроэнергия: ");
+                printf("\t%s"," Введите текущие показания счетчиков учета:\nЭлектроэнергия: ");
                     scanf("%f",&currentElectroRate);
-                printf("%s\n","Газ: ");
+                printf("%s","Газ: ");
                     scanf("%f",&currentGasRate);
                 printf("%s","Вода: ");
                     scanf("%f",&currentWatherRate);
 
-                printf("%s","Введите показания прошлого месяца :\nЭлектроэнергия: ");
+                printf("\t%s"," Введите показания прошлого месяца :\nЭлектроэнергия: ");
                     scanf("%f",&lastMonthElectroRate);
                 printf("%s","Газ: ");
                     scanf("%f",&lastMonthGasRate);
                 printf("%s","Вода: ");
                     scanf("%f",&lastMonthWatherRate);
 
-                printf("%s","Введите тариф на электроэнергию: ");
+                printf("\t%s"," Введите тариф на электроэнергию: ");
                     scanf("%f",&currentElectroTariff);
-                printf("%s","Введите тариф на газ: ");
+                printf("\t%s"," Введите тариф на газ: ");
                     scanf("%f",&currentGasTariff);
-                printf("%s","Введите тариф на водоснабжение: ");
+                printf("\t%s"," Введите тариф на водоснабжение: ");
                     scanf("%f",&currentWatherTariff);
 
-                promResElectro =
+                promResElectro = currentElectroRate - lastMonthElectroRate;
+                promResGas = currentGasRate - lastMonthGasRate;
+                promResWather = currentWatherRate - lastMonthWatherRate;
 
+                printf("\tПокзания за прошедший месяц составили:\nЭлектроэнергия: %.2f кВт.\nГаз: %.2f Кубов\nВодоснабжение: %.2f м3\t",promResElectro,promResGas,promResWather);
 
+                //current tarif * promresults + add if (if nostatic)
         }

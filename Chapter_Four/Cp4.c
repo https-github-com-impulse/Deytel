@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-  printf("%d",task3a());
+  printf("%d",sum());
   return 0;
 }
 
@@ -29,7 +29,7 @@ int main(){
           }
       }
 }*/
-    int task3a(){
+  /*int task3a(){
         for(int i = 1;i<=20;i++){
                 printf("%d",i);
                 if(i%5==0){
@@ -38,4 +38,11 @@ int main(){
                   printf("\t");
                 }
         }
+}*/
+    int sum(){
+         int total = 0;
+        for(int x = 100; x<=150;x++){
+            total+=x;
+        }
+        printf("%d",total );
     }

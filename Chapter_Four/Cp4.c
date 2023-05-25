@@ -2,8 +2,8 @@
 #include <math.h>
 
 int main(){
-  printf("%d",sum());
-  return 0;
+  printf("%d",firstNums());
+
 }
 
   /*int task(){
@@ -39,10 +39,12 @@ int main(){
                 }
         }
 }*/
-    int sum(){
-         int total = 0;
-        for(int x = 100; x<=150;x++){
-            total+=x;
+    /*Написать программу выводящую на экран первые
+N натуральных чисел.*/
+    int firstNums(){
+        int x;
+        scanf("%d",&x);
+        for(int i = 1; i <=x; i++){
+            printf("%d ",i);
         }
-        printf("%d",total );
     }

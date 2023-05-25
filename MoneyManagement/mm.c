@@ -82,7 +82,8 @@
                 promResGas = currentGasRate - lastMonthGasRate;
                 promResWather = currentWatherRate - lastMonthWatherRate;
 
-                printf("\tПокзания за прошедший месяц составили:\nЭлектроэнергия: %.2f кВт.\nГаз: %.2f Кубов\nВодоснабжение: %.2f м3\t",promResElectro,promResGas,promResWather);
+                printf("\tПокзания за текущий месяц составили:\nЭлектроэнергия: %.2f кВт.\nГаз: %.2f Кубов\nВодоснабжение: %.2f м3\t\n",promResElectro,promResGas,promResWather);
 
                 //current tarif * promresults + add if (if nostatic)
+                printf("\tОплата согласно тарифу за текущий месяц: \n Электроэнергия - %.2f руб\n Газ - %.2f руб\n Водоснабжение - %.2f руб\t\t",promResElectro*currentElectroTariff,promResGas*currentGasTariff,promResWather*currentWatherTariff);
         }

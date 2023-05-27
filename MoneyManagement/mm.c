@@ -2,23 +2,30 @@
 #include <math.h>
 
     int main(){
+            float sumJKH;
+            printf("%d",calculate() );
             //printf("%d",calculateJKH());
-            printf("%d",checkJKH() );
+
     }
 
 
 
 /*программа должна расчитывать  и распределять зарплату для  распостранения равномерных затрат на месяц*/
-    /*int calculate(){
-        int monthMoney
-        printf("%s\n","Введите вашу зарплату: " );
-        scanf("%f \n",&monthMoney);
+    int calculate(){
+        int monthSalary,apartmentSum,benzin,products,freeMoney;
+        printf("%s","Введите вашу зарплату: " );
+            scanf("%d",&monthSalary);
+        printf("%s","Введите затраты на бензин на 4 недели: ");
+            scanf("%d",&benzin);
+        printf("%s","Введите затраты на продукты на 4 недели: ");
+            scanf("%d",&products);
+        apartmentSum = 7000+calculateJKH();
+        printf("Итого свободных денег остается (Зарплта %d руб.- Бензин %d руб - Продукты %d руб - Квартира %d рублей = %d рублей)\t",monthSalary,benzin,products,apartmentSum,monthSalary-benzin-products-apartmentSum);
+    }
 
-    }*/
 
- /* Написать функцию - метод для сверки  показаний ЖКХ показаний * тариф (в будущем занос в DB)*/
-
-        /*int calculateJKH(){
+/*Написать функцию расчета общих затрат на ЖКХ*/
+        int calculateJKH(){
 
         float watherAcc,repairAcc,tsjAcc,
         electroAcc,domophoneAcc,gasAcc,sumJKH;
@@ -41,10 +48,12 @@
         electroAcc+domophoneAcc+gasAcc;
 
          printf("%s%.2f рублей.\n","Сумма ЖКХ в этом месяце составила:  ",sumJKH);
+         return sumJKH;
 
-}*/ //++
+} //++done
 
-        int checkJKH(){
+ /* Написать функцию - метод для сверки  показаний ЖКХ показаний * тариф (в будущем занос в DB)*/
+        /*int checkJKH(){
 
             const float staticElectroTariff = 4.01;//эл тариф
             const float staticWatherTariff = 40.82; //мусор тариф
@@ -86,4 +95,4 @@
 
                 //current tarif * promresults + add if (if nostatic)
                 printf("\tОплата согласно тарифу за текущий месяц: \n Электроэнергия - %.2f руб\n Газ - %.2f руб\n Водоснабжение - %.2f руб\t\t",promResElectro*currentElectroTariff,promResGas*currentGasTariff,promResWather*currentWatherTariff);
-        }
+        }*/ //++ done

@@ -58,8 +58,8 @@ N натуральных чисел.*/
              }
          }
          printf("%s\n","cycle done good lock!");
-     }*/
-      int fuckingPos(){
+}*/
+    /*int fuckingPos(){
           int count_nums;
           int sum = 0;
           int control_var = 9999;
@@ -74,4 +74,4 @@ N натуральных чисел.*/
             }
         average = sum/count_nums;
         printf("Среднее арифметическое равно %d\t",average);
-      }
+    }*/ //dodelyat

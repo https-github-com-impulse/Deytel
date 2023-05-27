@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-  printf("%d",firstNums());
+  printf("%d",firstPosition());
 
 }
 
@@ -41,10 +41,22 @@ int main(){
 }*/
     /*Написать программу выводящую на экран первые
 N натуральных чисел.*/
-    int firstNums(){
+    /*int firstNums(){
         int x;
         scanf("%d",&x);
         for(int i = 1; i <=x; i++){
             printf("%d ",i);
         }
-    }
+    }*/
+
+     int firstPosition(){
+         int count_nums;
+         printf("%s","Введите границу последовательности: ");
+            scanf("%d",&count_nums);
+         for(int i = 1;i<=count_nums;i++){
+             for(int j = i;j<=i;j++){
+                 scanf("%d",&i);
+             }
+         }
+         printf("%s\n","cycle done good lock!");
+     }

@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-  printf("%d",firstPosition());
+  printf("%d",fuckingPos());
 
 }
 
@@ -47,9 +47,8 @@ N натуральных чисел.*/
         for(int i = 1; i <=x; i++){
             printf("%d ",i);
         }
-    }*/
-
-     int firstPosition(){
+}*/
+    /*int firstPosition(){
          int count_nums;
          printf("%s","Введите границу последовательности: ");
             scanf("%d",&count_nums);
@@ -59,4 +58,20 @@ N натуральных чисел.*/
              }
          }
          printf("%s\n","cycle done good lock!");
-     }
+     }*/
+      int fuckingPos(){
+          int count_nums;
+          int sum = 0;
+          int control_var = 9999;
+          int average;
+          printf("%s","Введите несколько целых чисел для расчета среднего значения: ");
+            scanf("%f",&count_nums );
+            for(int i = 1 ; i<=count_nums;i++){
+                for(int j = i; j<=i;j++){
+
+                    sum+=j;
+                }
+            }
+        average = sum/count_nums;
+        printf("Среднее арифметическое равно %d\t",average);
+      }

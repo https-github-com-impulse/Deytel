@@ -2,7 +2,8 @@
 #include <math.h>
 
 int main(){
-  printf("%d",fuckingPos());
+    return  gistogramma();
+  //printf("%d",gistogramma());
 
 }
 
@@ -74,4 +75,41 @@ N натуральных чисел.*/
             }
         average = sum/count_nums;
         printf("Среднее арифметическое равно %d\t",average);
-    }*/ //dodelyat
+}*/ //dodelyat
+    /*int sumDigits(){
+          int sum = 0;
+          for(int i = 2;i<=30;i++){
+              if(i%2==0){
+                  sum+=i;
+              }
+          }
+          printf("Сумма четных чисел в промежутке от 2 до 30 : %d\t",sum );
+      }*/
+    /*int sumOds(){
+            int ods = 0 ;
+          for(int i = 1 ;i<=15;i++){
+              if(i%2!=0)
+              ods+=i;
+          }
+          printf("Сумма не четных цифр от 1 до 15 = %d ",ods );
+      }*/
+      int gistogramma(){
+          int a,b,c,d,e;
+          printf("%s","Введите 5 чисел между 1 и 30  попорядочку\n");
+                scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+            for(int i = 1;i<=a;i++){
+                printf("%s","*");}
+                printf("\n");
+                for(int j = 1;j<=b;j++){
+                    printf("%s","*");}
+                    printf("\n");
+                    for(int k = 1 ; k<=c;k++){
+                        printf("%s","*");}
+                        printf("\n");
+                        for(int l = 1 ;l<=d;l++){
+                            printf("%s","*");}
+                            printf("\n");
+                            for(int n = 1; n<=e;n++){
+                                printf("%s","*" );}
+                                printf("\n");
+                            }

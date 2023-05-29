@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-    return  firma();
+    return  calendar();
   //printf("%d",gistogramma());
 
 }
@@ -137,3 +137,30 @@ N натуральных чисел.*/
             }
             printf("Полная цена розничных товаров = %.2f", fullPrice);
         }*/ //dodelyat
+      int calendar(){
+          int years = 2023 ;
+          int days;
+          int month = 12;
+          for(int i = years;i<=2025;i++){
+              printf("Months\t%d\t",i);
+          }
+          printf("\n");
+          for(int i = 1;i<=month;i++){
+              printf("%d ",i);
+              switch (i) {
+                  case 1: printf("\t%s\n","31 days");break;continue;
+                  case 2: printf("\t%s\n","28 days");break;continue;
+                  case 3: printf("\t%s\n","31 days");break;continue;
+                  case 4: printf("\t%s\n","30 days");break;continue;
+                  case 5: printf("\t%s\n","31 days");break;continue;
+                  case 6: printf("\t%s\n","30 days");break;continue;
+                  case 7: printf("\t%s\n","31 days");break;continue;
+                  case 8: printf("\t%s\n","31 days");break;continue;
+                  case 9: printf("\t%s\n","30 days");break;continue;
+                  case 10: printf("\t%s\n","31 days");break;continue;
+                  case 11: printf("\t%s\n","30 days");break;continue;
+                  case 12: printf("\t%s\n","31 days");break;continue;
+              }
+              }
+
+         }

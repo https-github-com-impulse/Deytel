@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-    return  gistogramma();
+    return  firma();
   //printf("%d",gistogramma());
 
 }
@@ -93,7 +93,7 @@ N натуральных чисел.*/
           }
           printf("Сумма не четных цифр от 1 до 15 = %d ",ods );
       }*/
-      int gistogramma(){
+    /*int gistogramma(){
           int a,b,c,d,e;
           printf("%s","Введите 5 чисел между 1 и 30  попорядочку\n");
                 scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
@@ -112,4 +112,28 @@ N натуральных чисел.*/
                             for(int n = 1; n<=e;n++){
                                 printf("%s","*" );}
                                 printf("\n");
-                            }
+}*/
+    /*int firma(){
+            int number;
+            float price,fullPrice, count;
+            printf("%s\n","Введите  номер и количество изделий проданное за день: ");
+            scanf("%d %d",&number,&count);
+            switch (number) {
+                case 1:
+                    price = 2.98;
+                    fullPrice+=price*count;
+                case 2:
+                    price = 4.50;
+                    fullPrice+=price*count;
+                case 3:
+                    price = 9.98;
+                    fullPrice+=price*count;
+                case 4:
+                    price = 4.49;
+                    fullPrice+=price*count;
+                case 5:
+                    price = 6.87;
+                    fullPrice+=price*count;
+            }
+            printf("Полная цена розничных товаров = %.2f", fullPrice);
+        }*/ //dodelyat

@@ -5,6 +5,9 @@ int intPow(int,int);//proto
 int main(){
     int base,exponent;
     printf("%d\t",intPow(8,5) );
+    printf("%d",multiply(8,3));
+    printf("%s\n","Введите последовательность целых чисел");
+
 }
 
 int intPow(int base,int exponent){
@@ -13,4 +16,17 @@ int intPow(int base,int exponent){
             result*=base;
         }
     return result;
+}
+
+int multiply(int one,int two){
+    one%two==0?printf("%s","True\t"):printf("%s","False\t");
+    return 0;
+}
+
+int even (int num){
+    if(num%2==0){
+        return 1;
+    }else{
+        return 0;
+    }
 }

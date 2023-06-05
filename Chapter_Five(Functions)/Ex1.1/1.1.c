@@ -17,3 +17,5 @@
         double hypo = (sideA*sideA)+(sideB*sideB);
         return hypo;
 }
+
+    

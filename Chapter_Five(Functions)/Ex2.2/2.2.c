@@ -3,11 +3,12 @@
 int intPow(int,int);//proto
 
 int main(){
-    int base,exponent;
+    int base,exponent,side;
     printf("%d\t",intPow(8,5) );
     printf("%d",multiply(8,3));
-    printf("%s\n","Введите последовательность целых чисел");
-
+    printf("%s\n","Введите сторону квадрата ");
+    scanf("%s",&side);
+    printf("%d",square(side));
 }
 
 int intPow(int base,int exponent){

@@ -2,6 +2,7 @@
 
 int quadro(int);
 //proto
+
 int main(){
      int side;
      printf("%s","Введите кол во звездочек: ");
